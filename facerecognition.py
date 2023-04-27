@@ -33,6 +33,12 @@ facelocation_divyatest = face_rec.face_locations(divya_test)[0]
 encode_divyatest = face_rec.face_encodings(divya_test)[0]
 cv2.rectangle(divya_test, (facelocation_divyatest[3], facelocation_divyatest[0]), (facelocation_divyatest[1], facelocation_divyatest[2]), (255, 0, 255), 3)
 
+
+results = face_rec.compare_faces([encode_divya], encode_divyatest)
+print(results)
+
+
+
 cv2.imshow('main_img', divyaimg)
 cv2.imshow('test_img', divya_test)
 
