@@ -32,3 +32,10 @@ def findEncoding(images) :
     return imgencodings
 
 EncodeList = findEncoding(studentimg)
+
+vid = cv2.VideoCapture(0)
+while True :
+    success, frame = vid.read()
+    frames = cv2.resize(frame, (0,0), None, 0.25, 0.25)
+    frames = cv2.cvtColor(frames, cv2.COLOR_BGR2RGB)
+
