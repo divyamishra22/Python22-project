@@ -42,6 +42,9 @@ while True :
     facesInFrame = face_rec.face_locations(frames)
     encodeFacesInFrame = face_rec.face_encodings(frames, facesInFrame)
 
+    for encodeFace, faceloc in zip(encodeFacesInFrame, facesInFrame) :
+        matches = face_rec.compare_faces(EncodeList, encodeFace)
+
 
 
 
