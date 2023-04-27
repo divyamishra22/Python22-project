@@ -43,6 +43,8 @@ def MarkAttendence(name):
         if name not in nameList:
             now = datetime.now()
             timestr = now.strftime('%H:%M')
+            f.writelines(f'\n{name}, {timestr}')
+            # statment = str('welcome to class' + name)
 
     
 
