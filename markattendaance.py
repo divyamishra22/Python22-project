@@ -55,8 +55,8 @@ while True :
             cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 3)
     
 
-        cv2.imshow('video',frame)
-        cv2.waitKey(1)
+    cv2.imshow('video',frame)
+    cv2.waitKey(1)
 
 
    
