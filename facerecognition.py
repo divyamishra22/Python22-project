@@ -13,7 +13,7 @@ def resize(img, size):
 
 
 #img declaration
-divyaimg= face_rec.load_image_file('images\divya.jpg')
+divyaimg= face_rec.load_image_file('images\priyanka.jpg')
 
 divyaimg = cv2.cvtColor(divyaimg, cv2.COLOR_BGR2RGB)
 divyaimg = resize(divyaimg, 0.50)
