@@ -44,6 +44,8 @@ while True :
 
     for encodeFace, faceloc in zip(encodeFacesInFrame, facesInFrame) :
         matches = face_rec.compare_faces(EncodeList, encodeFace)
+        facedis = face_rec.face_distance(EncodeList, encodeFace)
+        print(facedis)
 
 
 
