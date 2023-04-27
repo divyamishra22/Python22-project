@@ -48,6 +48,10 @@ while True :
         print(facedis)
         matchIndex = np.argmin(facedis)
 
+        if matches[matchIndex] :
+            name = studentName[matchIndex].upper()
+    
+     
 
 
 
