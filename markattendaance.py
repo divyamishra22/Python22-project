@@ -52,7 +52,8 @@ while True :
             name = studentName[matchIndex].upper()
             y1, x2, y2, x1 = faceloc
             y1, x2, y2, x1 = y1*4, x2*4, y2*4, x1*4
-    
+            cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 3)
+           
      
 
 
