@@ -12,3 +12,5 @@ for cl in myList :
     img = cv2.imread(f'{path}/{cl}')
     studentimg.append(img)
     studentname.append(os.path.splitext(cl)[0])
+
+print(studentname)
