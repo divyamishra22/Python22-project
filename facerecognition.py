@@ -28,6 +28,11 @@ encode_divya = face_rec.face_encodings(divyaimg)[0]
 cv2.rectangle(divyaimg,(facelocation_divya[3], facelocation_divya[0]) ,
  (facelocation_divya[1], facelocation_divya[2]), (255 , 0, 255), 3)
 
+
+facelocation_divyatest = face_rec.face_locations(divya_test)[0]
+encode_divyatest = face_rec.face_encodings(divya_test)[0]
+cv2.rectangle(divya_test, (facelocation_divya_test[3], facelocation_divya_test[0]), (facelocation_divya_test[1], facelocation_divya_test[2]), (255, 0, 255), 3)
+
 cv2.imshow('main_img', divyaimg)
 
 
