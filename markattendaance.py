@@ -21,3 +21,12 @@ for cl in myList :
     studentname.append(os.path.splitext(cl)[0])
 
 print(studentname)
+
+def findEncoding(images) :
+    imgencodings = []
+    for img in images :
+        img = resize(img, 0.50)
+        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        encodeimg = face_rec.face_encodings(img)[0]
+        imgencodings.append(encodeimg)
+    return imgencodings
