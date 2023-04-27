@@ -39,6 +39,10 @@ def MarkAttendence(name):
         for line in myDatalist :
             entry = line.split(',')
             nameList.append(entry[0])
+        
+        if name not in nameList:
+            now = datetime.now()
+            timestr = now.strftime('%H:%M')
 
     
 
