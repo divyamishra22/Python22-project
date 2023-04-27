@@ -45,8 +45,8 @@ while True :
     for encodeFace, faceloc in zip(encodeFacesInFrame, facesInFrame) :
         matches = face_rec.compare_faces(EncodeList, encodeFace)
         facedis = face_rec.face_distance(EncodeList, encodeFace)
-        print(facedis)
-        matchIndex = np.argmin(facedis)
+        # print(facedis)
+        matchIndex = np.argmin(facedis)        
 
         if matches[matchIndex] :
             name = studentName[matchIndex].upper()
@@ -55,8 +55,8 @@ while True :
             cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 3)
     
 
-    cv2.imshow('video',frame)
-    cv2.waitKey(1)
+        cv2.imshow('video',frame)
+        cv2.waitKey(1)
 
 
    
