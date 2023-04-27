@@ -31,6 +31,14 @@ def findEncoding(images) :
         imgencodings.append(encodeimg)
     return imgencodings
 
+def MarkAttendence(name):
+    with open('attendence.csv', 'r+') as f:
+        myDatalist =  f.readlines()
+        nameList = []
+    
+
+    
+
 EncodeList = findEncoding(studentimg)
 
 vid = cv2.VideoCapture(0)
