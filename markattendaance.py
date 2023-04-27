@@ -30,3 +30,5 @@ def findEncoding(images) :
         encodeimg = face_rec.face_encodings(img)[0]
         imgencodings.append(encodeimg)
     return imgencodings
+
+EncodeList = findEncoding(studentimg)
