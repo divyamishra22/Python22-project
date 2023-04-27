@@ -35,6 +35,10 @@ def MarkAttendence(name):
     with open('attendence.csv', 'r+') as f:
         myDatalist =  f.readlines()
         nameList = []
+        for line in myDatalist :
+            entry = line.split(',')
+            nameList.append(entry[0])
+
     
 
     
