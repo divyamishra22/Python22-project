@@ -50,6 +50,8 @@ while True :
 
         if matches[matchIndex] :
             name = studentName[matchIndex].upper()
+            y1, x2, y2, x1 = faceloc
+            y1, x2, y2, x1 = y1*4, x2*4, y2*4, x1*4
     
      
 
