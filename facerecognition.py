@@ -18,6 +18,10 @@ divyaimg= face_rec.load_image_file('images\priyanka.jpg')
 divyaimg = cv2.cvtColor(divyaimg, cv2.COLOR_BGR2RGB)
 divyaimg = resize(divyaimg, 0.50)
 
+divya_test = face_rec.load_image_file('images\katrina.jpg')
+divya_test = resize(divya_test, 0.50)
+divya_test = cv2.cvtColor(divya_test, cv2.COLOR_BGR2RGB)
+
 #face location
 facelocation_divya = face_rec.face_locations(divyaimg)[0]
 encode_divya = face_rec.face_encodings(divyaimg)[0]
